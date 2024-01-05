@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Personal Details Form</title>
+</head>
+<body>
+<form>
+<fieldset>
+  <legend>Personal Details</legend>
+  <!-- Personal Details Fields -->
+  <label for="firstName">Firstname:</label>
+  <input type="text" id="firstName" name="firstName" required>
+    <br>
+    <br>
+  <label for="middleName">Middlename:</label>
+  <input type="text" id="middleName" name="middleName">
+    <br>
+    <br>
+  <label for="lastName">Lastname:</label>
+  <input type="text" id="lastName" name="lastName" required>
+    <br><br>
+  <label for="course">Course:</label>
+  <select id="course" name="course">
+    <option value="">--Select Course--</option>
+    <option value="Course">Course</option>
+    <!-- Add more course options if needed -->
+  </select>
+
+  <br><br>
+  <label>Gender:</label>
+  <br>
+  <input type="radio" id="male" name="gender" value="Male">
+  <label for="male">Male</label>
+  <br>
+  <input type="radio" id="female" name="gender" value="Female">
+  <label for="female">Female</label>
+  <br>
+  <input type="radio" id="other" name="gender" value="Other">
+  <label for="other">Other</label>
+  <br>
+  <br>
+
+  <label for="dob">DOB:</label>
+  <input type="datetime-local" id="dob" name="dob">
+  <br>
+  <br>
+  <label for="phone">Phone:</label>
+  <input type="text" value="+91" size="2" disabled>
+  <input type="tel" id="phone">
+  <br>
+  <br>
+  <label for="address">Address:</label>
+  <br>
+  <textarea id="address" name="address" rows="4" cols="50"></textarea>
+  <br>
+  <br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+  <br>
+  <br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password">
+  <br><br>
+  <label for="retypePassword">Re-type password:</label>
+  <input type="password" id="retypePassword" name="retypePassword">
+  <br>
+  <br>
+  <label>
+    <input type="checkbox" name="termsConditions" required> Agree to terms and conditions
+  </label>
+  <br>
+  <label for="file">Choose File:</label>
+  <input type="file" id="file" name="file">
+  <br><br>
+  <label for="color">Choose Color:</label>
+  <input type="color" id="color" name="color">
+  <br>
+  <br>
+  <input type="reset" value="Reset">
+  <input type="submit" value="Submit">
+</fieldset>
+</form>
+</body>
+</html>
